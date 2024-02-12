@@ -1,0 +1,72 @@
+body {
+    background-color: #f7eaf6; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .heartBeat {
+    animation: heartbeat 1.5s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button-animation {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff6381; /* Pink button color */
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff4d6a; /* Darker pink on hover */
+  }
+  
+  p#response {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
